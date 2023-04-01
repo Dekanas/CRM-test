@@ -3,7 +3,7 @@ import pandas as pd
 from google.cloud import bigquery
 
 # Authenticate and connect to BigQuery
-client = bigquery.Client.from_service_account_json('https://raw.githubusercontent.com/Dekanas/CRM-test/main/keys.json')
+client = bigquery.Client.from_service_account_json('keys.json')
 
 # Define the BigQuery dataset and table for storing sales leads
 dataset_id = 'crm'
